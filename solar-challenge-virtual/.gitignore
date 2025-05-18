@@ -1,34 +1,43 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
-
-# Ignore Python cache files
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Ignore virtual environment folders
+# Ignore Python virtual environments
 env/
 venv/
 ENV/
 .venv/
+solar-challenge-virtual/
+
+# Ignore site-packages folder (installed packages)
+Lib/site-packages/
+
+# Ignore Scripts folder (executables)
+Scripts/
+
+# Ignore all CSV files except those in data/ folder
+*.csv
+!data/
+!data/*.csv
 
 # Ignore Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Ignore all CSV files
-*.csv
-
-# But include CSV files inside the data/ folder
-!data/
-!data/*.csv
-
-# System files
+# Ignore system files
 .DS_Store
 Thumbs.db
 
-# Ignore VS Code settings (optional)
-.vscode/
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
 
-# Ignore logs and temp files
+# VSCode & OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs & temp
 *.log
 *.tmp
+
+# Exclude all CSVs except data folder
+*.csv
+!data/
+!data/*.csv
