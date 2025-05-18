@@ -1,0 +1,43 @@
+# Ignore Python virtual environments
+env/
+venv/
+ENV/
+.venv/
+solar-challenge-virtual/
+
+# Ignore site-packages folder (installed packages)
+Lib/site-packages/
+
+# Ignore Scripts folder (executables)
+Scripts/
+
+# Ignore all CSV files except those in data/ folder
+*.csv
+!data/
+!data/*.csv
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# VSCode & OS files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+*.tmp
+
+# Exclude all CSVs except data folder
+*.csv
+!data/
+!data/*.csv
